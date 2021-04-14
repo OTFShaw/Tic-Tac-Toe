@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+#define BOARD_WIDTH 3
+#define BOARD_SIZE (BOARD_WIDTH*BOARD_WIDTH)
+
 
 void win(int player, int winner, int pos[])
 {
@@ -26,7 +29,7 @@ int main()
 {
 	// Declare Variables 
 	int winner = 0, count = 0;
-	int pos[9], index, sign, player, flag, s, k, j;
+	int pos[9], index, sign, player, flag, s, k;
 
 
 	// Assign empty spaces
